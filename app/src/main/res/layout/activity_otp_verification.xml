@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/tv_otp_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:fontFamily="@font/inter_bold"
+        android:gravity="center"
+        android:text="OTP Verification"
+        android:textColor="#0E151F"
+        android:textSize="@dimen/_24sdp" />
+
+    <TextView
+        android:id="@+id/tv_mob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_otp_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:fontFamily="@font/inter_regular"
+        android:gravity="center"
+        android:text="we sent a verification code to +91-7780515180"
+        android:textColor="#000000"
+        android:textSize="@dimen/_11sdp" />
+
+    <TextView
+        android:id="@+id/tv_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_mob"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_17sdp"
+        android:fontFamily="@font/inter_medium"
+        android:gravity="center"
+        android:text="00:00"
+        android:textColor="#278B2B"
+        android:textSize="@dimen/_11sdp" />
+
+    <com.balajiseeds.utils.OtpEditText
+        android:id="@+id/et_otp"
+        android:layout_width="@dimen/_214sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_below="@id/tv_timer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:fontFamily="@font/inter_medium"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:maxLength="4"
+        android:textSize="@dimen/_18ssp" />
+
+    <LinearLayout
+        android:id="@+id/ll_resend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_otp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_23sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_regular"
+            android:gravity="center"
+            android:text="Don't receive the OTP?"
+            android:textColor="#000000"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/tv_resend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_medium"
+            android:gravity="center"
+            android:text=" Resend"
+            android:textColor="#278B2B"
+            android:textSize="@dimen/_10sdp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_resend"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_31sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:background="@drawable/border_grey_round_corners"
+        android:backgroundTint="#278B2B"
+        android:fontFamily="@font/inter_semibold"
+        android:gravity="center"
+        android:paddingTop="@dimen/_14sdp"
+        android:paddingBottom="@dimen/_14sdp"
+        android:text="Verify Now"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/_12ssp" />
+
+
+</RelativeLayout>

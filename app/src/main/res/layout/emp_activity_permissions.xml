@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F8FA"
+    tools:context=".employee.ExpensesActivity">
+
+    <TextView
+        android:id="@+id/txt_emp_permission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:drawableStart="@drawable/icon_metro_arrow_right"
+        android:drawablePadding="@dimen/_15sdp"
+        android:drawableTint="#000000"
+        android:fontFamily="@font/inter_semibold"
+        android:gravity="center"
+        android:text="Additional Work"
+        android:textColor="#000000"
+        android:textSize="@dimen/_14ssp" />
+
+    <TextView
+        android:id="@+id/tv_add_expenses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:layout_marginEnd="@dimen/_13sdp"
+        android:drawableStart="@drawable/icon_ionic_ios_add_circle"
+        android:drawablePadding="@dimen/_3sdp"
+        android:fontFamily="@font/inter_semibold"
+        android:gravity="center"
+        android:text="Request"
+        android:textColor="#278B2B"
+        android:textSize="@dimen/_11ssp" />
+
+
+
+    <com.balajiseeds.utils.CustomRecyclerView
+        android:id="@+id/rv_aditional_days"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_add_expenses"
+        android:layout_marginStart="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_13sdp"
+        android:paddingBottom="@dimen/_13sdp" />
+
+</RelativeLayout>

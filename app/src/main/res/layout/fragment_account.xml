@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_16sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_16sdp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ellipse_35"
+                android:translationX="-119dp"
+                android:translationY="-218dp" />
+
+            <!--<ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:src="@drawable/logo" />
+
+            <ImageView
+                android:id="@+id/iv_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_14sdp"
+                android:src="@drawable/baseline_notifications_24" />
+
+            <TextView
+                android:id="@+id/tv_notification_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/iv_notification"
+                android:layout_alignRight="@id/iv_notification"
+                android:background="@drawable/circle"
+                android:fontFamily="@font/encodesans_semibold"
+                android:paddingStart="@dimen/_4sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_4sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_6ssp"
+                android:translationX="@dimen/_minus3sdp"
+                android:translationY="@dimen/_minus6sdp" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_18sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_employees"
+                        android:layout_width="@dimen/_128sdp"
+                        android:layout_height="@dimen/_121sdp"
+                        android:layout_marginStart="@dimen/_16sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="@dimen/_7sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/iv_emp"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/self_employed" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/iv_emp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_13sdp"
+                                android:fontFamily="@font/inter_semibold"
+                                android:text="Employees"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/_11sdp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_attendance"
+                        android:layout_width="@dimen/_128sdp"
+                        android:layout_height="@dimen/_121sdp"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_16sdp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="@dimen/_7sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/iv_att"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/calendar" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/iv_att"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_13sdp"
+                                android:fontFamily="@font/inter_semibold"
+                                android:text="Attendance"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/_11sdp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_18sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_holidays"
+                        android:layout_width="@dimen/_128sdp"
+                        android:layout_height="@dimen/_121sdp"
+                        android:layout_marginStart="@dimen/_16sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="@dimen/_7sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/iv_holidays"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/ic_holidays" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/iv_holidays"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_13sdp"
+                                android:fontFamily="@font/inter_semibold"
+                                android:text="Holidays"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/_11sdp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_permission"
+                        android:layout_width="@dimen/_128sdp"
+                        android:layout_height="@dimen/_121sdp"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_16sdp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="@dimen/_7sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/iv_permission"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/request_send_svgrepo_com" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/iv_permission"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_13sdp"
+                                android:fontFamily="@font/inter_semibold"
+                                android:text="Permission"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/_11sdp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_18sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_leaves"
+                        android:layout_width="@dimen/_128sdp"
+                        android:layout_height="@dimen/_121sdp"
+                        android:layout_marginStart="@dimen/_16sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="@dimen/_7sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/iv_leaves"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/leave" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/iv_leaves"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_13sdp"
+                                android:fontFamily="@font/inter_semibold"
+                                android:text="Leaves"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/_11sdp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_products"
+                        android:layout_width="@dimen/_128sdp"
+                        android:layout_height="@dimen/_121sdp"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_16sdp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="@dimen/_7sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/iv_products"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/pack" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/iv_products"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_13sdp"
+                                android:fontFamily="@font/inter_semibold"
+                                android:text="Products"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/_11sdp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_18sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_activity_new"
+                        android:layout_width="@dimen/_128sdp"
+                        android:layout_height="@dimen/_121sdp"
+                        android:layout_marginStart="@dimen/_16sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="@dimen/_7sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/iv_activity_new"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/tent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/iv_activity_new"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_13sdp"
+                                android:fontFamily="@font/inter_semibold"
+                                android:text="Activity"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/_11sdp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_expenses_heaz"
+                        android:layout_width="@dimen/_128sdp"
+                        android:layout_height="@dimen/_121sdp"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_16sdp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="@dimen/_7sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/iv_expenses_heaz"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/feedback" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/iv_expenses_heaz"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_13sdp"
+                                android:fontFamily="@font/inter_semibold"
+                                android:text="Expenses heads"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/_11sdp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_18sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_orders"
+                        android:layout_width="@dimen/_128sdp"
+                        android:layout_height="@dimen/_121sdp"
+                        android:layout_marginStart="@dimen/_16sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="@dimen/_7sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/iv_orders"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/shopping_list2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/iv_orders"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_13sdp"
+                                android:fontFamily="@font/inter_semibold"
+                                android:text="Orders"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/_11sdp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_expenses"
+                        android:layout_width="@dimen/_128sdp"
+                        android:layout_height="@dimen/_121sdp"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_16sdp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="@dimen/_7sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/iv_expenses"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/feedback" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/iv_expenses"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_13sdp"
+                                android:fontFamily="@font/inter_semibold"
+                                android:text="Expenses"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/_11sdp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_18sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_activity"
+                        android:layout_width="@dimen/_128sdp"
+                        android:layout_height="@dimen/_121sdp"
+                        android:layout_marginStart="@dimen/_16sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="@dimen/_7sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/iv_activity"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/tent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/iv_activity"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_13sdp"
+                                android:fontFamily="@font/inter_semibold"
+                                android:text="Activity"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/_11sdp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_vehicle_readings"
+                        android:layout_width="@dimen/_128sdp"
+                        android:layout_height="@dimen/_121sdp"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_16sdp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="@dimen/_7sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/iv_vehicle_readings"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/feedback" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/iv_vehicle_readings"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_13sdp"
+                                android:fontFamily="@font/inter_semibold"
+                                android:text="Vehicle Readings"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/_11sdp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_18sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_change_pass"
+                        android:layout_width="@dimen/_128sdp"
+                        android:layout_height="@dimen/_121sdp"
+                        android:layout_marginStart="@dimen/_16sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="@dimen/_7sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/iv_change_pass"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/icon_awesome_lock" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/iv_change_pass"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_13sdp"
+                                android:fontFamily="@font/inter_semibold"
+                                android:text="Change Password"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/_11sdp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_logout"
+                        android:layout_width="@dimen/_128sdp"
+                        android:layout_height="@dimen/_121sdp"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_16sdp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="@dimen/_7sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/iv_logout"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/self_employed" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/iv_logout"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_13sdp"
+                                android:fontFamily="@font/inter_semibold"
+                                android:text="Logout"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/_11sdp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

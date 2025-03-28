@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F8FA"
+    tools:context=".admin.AttendanceListActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:drawableStart="@drawable/icon_metro_arrow_right"
+            android:drawablePadding="@dimen/_15sdp"
+            android:drawableTint="#ffffff"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Attendance List"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_14ssp" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tl_attendance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_22sdp"
+            android:background="#278B2B"
+            app:tabIndicatorColor="#FFFFFF"
+            app:tabTextColor="#ffffff">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daily Attendance" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monthly Attendance" />
+
+        </com.google.android.material.tabs.TabLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appbar"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_daily_att"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_13sdp"
+                android:background="@drawable/border_grey_round_corners"
+                android:drawableEnd="@drawable/icon_awesome_calendar_alt"
+                android:drawablePadding="@dimen/_14sdp"
+                android:hint="Select Date"
+                android:paddingStart="@dimen/_11sdp"
+                android:paddingTop="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_11sdp"
+                android:paddingBottom="@dimen/_15sdp"
+                android:textSize="@dimen/_10ssp" />
+
+            <LinearLayout
+                android:id="@+id/ll_statecity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_search"
+                android:layout_marginStart="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_13sdp"
+                android:background="#00ffffff">
+
+                <Spinner
+                    android:id="@+id/sp_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_6sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_bg_transparent"
+                    android:entries="@array/state"
+                    android:paddingStart="@dimen/_14sdp"
+                    android:paddingTop="@dimen/_14sdp"
+
+                    android:paddingBottom="@dimen/_14sdp" />
+
+                <Spinner
+                    android:id="@+id/sp_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_bg_transparent"
+                    android:entries="@array/city"
+                    android:paddingStart="@dimen/_14sdp"
+                    android:paddingTop="@dimen/_14sdp"
+
+                    android:paddingBottom="@dimen/_14sdp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_monthly_att"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_search_emp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:background="@drawable/border_grey_round_corners"
+                    android:hint="Search by Employee Name"
+                    android:paddingStart="@dimen/_11sdp"
+                    android:paddingTop="@dimen/_15sdp"
+                    android:paddingEnd="@dimen/_11sdp"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:textSize="@dimen/_10ssp" />
+
+                <ImageView
+                    android:id="@+id/iv_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/et_search_emp"
+                    android:layout_alignEnd="@id/et_search_emp"
+                    android:layout_alignBottom="@id/et_search_emp"
+                    android:layout_marginEnd="@dimen/_14sdp"
+                    android:src="@drawable/icon_ionic_ios_search" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/sp_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_6sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_bg_transparent"
+                    android:entries="@array/month"
+                    android:paddingStart="@dimen/_14sdp"
+                    android:paddingTop="@dimen/_14sdp"
+                    android:paddingBottom="@dimen/_14sdp" />
+
+                <Spinner
+                    android:id="@+id/sp_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_bg_transparent"
+                    android:entries="@array/year"
+                    android:paddingStart="@dimen/_14sdp"
+                    android:paddingTop="@dimen/_14sdp"
+                    android:paddingBottom="@dimen/_14sdp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.balajiseeds.utils.CustomRecyclerView
+            android:id="@+id/rv_attendance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_3sdp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

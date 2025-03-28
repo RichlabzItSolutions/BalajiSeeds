@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    android:padding="16dp"
+    tools:context=".employee.ProductOrderActivity">
+
+
+    <ImageView
+        android:id="@+id/order_confirmed_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_verified"
+        android:contentDescription="Order Confirmed"
+        android:layout_gravity="center"/>
+
+    <!-- Order Confirmed Message -->
+    <TextView
+        android:id="@+id/order_confirmed_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Order Confirmed !"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <!-- Subtext for Order Success -->
+    <TextView
+        android:id="@+id/order_subtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Your order has been placed successfully."
+        android:textSize="16sp"
+        android:textColor="#0E151F"
+        android:gravity="center"/>
+
+    <!-- Order ID Text -->
+    <TextView
+        android:id="@+id/order_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Order ID - BHYSI782HJKL"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <!-- Continue Shopping Button -->
+    <TextView
+        android:id="@+id/continue_shopping_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Continue Shopping"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:background="#278B2B"
+        android:padding="12dp"/>
+
+    <!-- Track My Order Text -->
+    <TextView
+        android:id="@+id/track_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Track my Order"
+        android:textSize="16sp"
+        android:textColor="#278B2B"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container_pro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

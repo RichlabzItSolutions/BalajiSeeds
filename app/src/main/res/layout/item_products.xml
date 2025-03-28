@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main"
+    android:layout_width="@dimen/_132sdp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_5sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginEnd="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:background="@drawable/border_grey_round_corners"
+    android:paddingBottom="@dimen/_21sdp">
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="@dimen/_67sdp"
+        android:layout_height="@dimen/_85sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_23sdp"
+        android:src="@drawable/sample1" />
+
+    <ImageView
+        android:id="@+id/iv_fav"
+        android:layout_width="@dimen/_11sdp"
+        android:layout_height="@dimen/_11sdp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:layout_marginEnd="@dimen/_11sdp"
+        android:src="@drawable/icon_metro_favorite_unfilled" />
+
+    <TextView
+        android:id="@+id/tv_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Kajal Seeds"
+        android:textColor="#000000"
+        android:textSize="@dimen/_10ssp" />
+
+    <TextView
+        android:id="@+id/tv_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_product_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_21sdp"
+        android:background="@drawable/border_grey_round_corners"
+        android:backgroundTint="#278B2B"
+        android:drawableEnd="@drawable/icon_ionic_ios_add"
+        android:drawablePadding="@dimen/_8sdp"
+        android:drawableTint="#ffffff"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="ADD"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/_9ssp" />
+
+    <LinearLayout
+        android:id="@+id/ll_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_product_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_21sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/_3sdp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/btnMinus"
+            android:layout_width="@dimen/_21sdp"
+            android:layout_height="@dimen/_21sdp"
+            android:background="@drawable/border_grey_round_corners"
+            android:backgroundTint="#278B2B"
+            android:fontFamily="@font/inter_extrabold"
+            android:gravity="center"
+            android:text="-"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:id="@+id/tvQuantity"
+            android:layout_width="@dimen/_21sdp"
+            android:layout_height="@dimen/_21sdp"
+            android:fontFamily="@font/inter_extrabold"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#000000"
+            android:textSize="@dimen/_11ssp" />
+
+        <TextView
+            android:id="@+id/btnPlus"
+            android:layout_width="@dimen/_21sdp"
+            android:layout_height="@dimen/_21sdp"
+            android:background="@drawable/border_grey_round_corners"
+            android:backgroundTint="#278B2B"
+            android:fontFamily="@font/inter_extrabold"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_14ssp" />
+    </LinearLayout>
+</RelativeLayout>

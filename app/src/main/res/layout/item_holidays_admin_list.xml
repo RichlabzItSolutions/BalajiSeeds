@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_12sdp"
+    android:background="@drawable/border_grey_round_corners"
+    android:backgroundTint="#ffffff"
+    android:paddingStart="@dimen/_10sdp"
+    android:paddingTop="@dimen/_12sdp"
+    android:paddingEnd="@dimen/_10sdp"
+    android:paddingBottom="@dimen/_12sdp">
+
+    <TableRow
+        android:id="@+id/tr_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_medium"
+            android:text="From Date - "
+            android:textColor="#000000"
+            android:textSize="@dimen/_11sdp" />
+
+        <TextView
+            android:id="@+id/tv_from_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter_medium"
+            android:text="10-01-2023"
+            android:textColor="#70000000"
+            android:textSize="@dimen/_11sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_medium"
+            android:text="To Date - "
+            android:textColor="#000000"
+            android:textSize="@dimen/_11sdp" />
+
+        <TextView
+            android:id="@+id/tv_to_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter_medium"
+            android:text="12-01-2023"
+            android:textColor="#70000000"
+            android:textSize="@dimen/_11sdp" />
+    </TableRow>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/tr_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tr_date"
+        android:layout_marginTop="@dimen/_20sdp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_medium"
+                android:text="Title"
+                android:textColor="#000000"
+                android:textSize="@dimen/_11ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:fontFamily="@font/inter_medium"
+                android:text=":"
+                android:textColor="#000000"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:fontFamily="@font/inter_medium"
+                android:text="Akeeb Shaik"
+                android:textColor="#70000000"
+                android:textSize="@dimen/_10ssp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_medium"
+                android:text="State"
+                android:textColor="#000000"
+                android:textSize="@dimen/_11ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:fontFamily="@font/inter_medium"
+                android:text=":"
+                android:textColor="#000000"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/tv_State"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:fontFamily="@font/inter_medium"
+                android:text="Suffering from Fever"
+                android:textColor="#70000000"
+                android:textSize="@dimen/_10ssp" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_medium"
+                android:text="Description"
+                android:textColor="#000000"
+                android:textSize="@dimen/_11ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:fontFamily="@font/inter_medium"
+                android:text=":"
+                android:textColor="#000000"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/tv_Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:fontFamily="@font/inter_medium"
+                android:text="Suffering from Fever"
+                android:textColor="#70000000"
+                android:textSize="@dimen/_10ssp" />
+        </TableRow>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_Edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tr_info"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/_19sdp"
+        android:background="@drawable/border_grey_round_corners"
+        android:backgroundTint="#EDFAEE"
+        android:drawableStart="@drawable/icon_awesome_edit"
+        android:drawablePadding="@dimen/_4sdp"
+        android:fontFamily="@font/inter_medium"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:text="Edit"
+        android:textColor="#278B2B"
+        android:textSize="@dimen/_11ssp" />
+
+    <TextView
+        android:id="@+id/tv_Delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tr_info"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_19sdp"
+        android:background="@drawable/border_grey_round_corners"
+        android:backgroundTint="#FFD8E9"
+        android:drawableStart="@drawable/icon_material_cancel"
+        android:drawablePadding="@dimen/_4sdp"
+        android:fontFamily="@font/inter_medium"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:text="Delete"
+        android:textColor="#EB0000"
+        android:textSize="@dimen/_11ssp" />
+
+</RelativeLayout>

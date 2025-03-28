@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- <uses-permission android:name="com.android.alarm.permission.SET_ALARM" /> -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="34" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="34" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+    <application
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BalajiSeeds"
+        tools:targetApi="31">
+        <activity
+            android:name=".admin.ProductListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".employee.PaidHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".employee.ProductOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.PermissionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AddHolidaysActivity"
+            android:exported="false" />
+        <activity
+            android:name=".employee.HolidaysActivity"
+            android:exported="false" />
+        <activity
+            android:name=".employee.ExpensesHeadsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ExpensesHeadsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.HolidaysActivity"
+            android:exported="false" />
+        <activity
+            android:name=".employee.PermissionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".employee.OrderDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ExpensesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.VehicleReadingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ActivityListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".employee.ActivityDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".employee.ExpensesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".employee.AddActivityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".employee.ActivityListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.TrackEmployeeActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.canhub.cropper.CropImageActivity"
+            android:theme="@style/BalajiSeeds.Actionbar" />
+        <activity
+            android:name=".employee.VehicleReadingActivity"
+            android:exported="false"
+            android:hardwareAccelerated="false" />
+        <activity
+            android:name=".employee.AddLeaveActivity"
+            android:exported="false" />
+        <activity
+            android:name=".employee.LeaveListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".employee.MonthlyAttendanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".employee.EmployeeMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AddProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.OrdersListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AttendanceDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.MyWishlistActivity"
+            android:exported="false" />
+        <activity
+            android:name=".employee.MyCartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.LeavesListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AttendanceListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AddEmployeeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.EmployeeListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AdminMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OtpVerificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".utils.LogoutReciver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.balajiseeds.ACTION_ALARM" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".utils.ForegroundService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="location" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC68uSRK23hrzev5tCx1ePVfNiLeMhEP4c" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

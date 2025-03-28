@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main"
+    android:layout_width="@dimen/_132sdp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_5sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginEnd="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:background="@drawable/border_grey_round_corners"
+    android:paddingBottom="@dimen/_21sdp">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="@dimen/_67sdp"
+        android:layout_height="@dimen/_85sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_23sdp"
+        android:src="@drawable/sample1" />
+
+    <TextView
+        android:id="@+id/tv_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Kajal Seeds"
+        android:textColor="#000000"
+        android:textSize="@dimen/_10ssp" />
+
+    <TextView
+        android:id="@+id/tv_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_product_name"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_21sdp"
+        android:background="@drawable/border_grey_round_corners"
+        android:backgroundTint="#278B2B"
+        android:drawableStart="@drawable/icon_awesome_edit"
+        android:drawablePadding="@dimen/_3sdp"
+        android:drawableTint="#ffffff"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="Edit"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/_9ssp" />
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_product_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_21sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:background="@drawable/border_grey_round_corners"
+        android:backgroundTint="#F44336"
+        android:drawablePadding="@dimen/_3sdp"
+        android:drawableTint="#ffffff"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="Delete"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/_9ssp" />
+
+</RelativeLayout>

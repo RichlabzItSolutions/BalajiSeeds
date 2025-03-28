@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#ffffff"
+    tools:context=".employee.fragments.AddOrdersFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_emp_add_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:drawableStart="@drawable/icon_metro_arrow_right"
+            android:drawablePadding="@dimen/_15sdp"
+            android:drawableTint="#000000"
+            android:fontFamily="@font/inter_semibold"
+            android:gravity="center"
+            android:text="Add Order"
+            android:textColor="#000000"
+            android:textSize="@dimen/_14ssp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_emp_add_order"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_27sdp"
+            android:fontFamily="@font/inter_medium"
+            android:text="Party Code"
+            android:textColor="#626364"
+            android:textSize="@dimen/_10sdp" />
+
+        <EditText
+            android:id="@+id/et_partyCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_13sdp"
+            android:background="@drawable/border_grey_round_corners"
+            android:hint="Party Code"
+            android:paddingStart="@dimen/_11sdp"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_11sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:textSize="@dimen/_10ssp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_emp_add_order"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_27sdp"
+            android:fontFamily="@font/inter_medium"
+            android:text="Party Name"
+            android:textColor="#626364"
+            android:textSize="@dimen/_10sdp" />
+
+        <EditText
+            android:id="@+id/et_partyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_13sdp"
+            android:background="@drawable/border_grey_round_corners"
+            android:hint="Party Name"
+            android:paddingStart="@dimen/_11sdp"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_11sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:textSize="@dimen/_10ssp" />
+
+
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_55sdp"
+            android:layout_marginStart="@dimen/_13sdp"
+            android:layout_marginEnd="@dimen/_13sdp"
+            android:background="@drawable/border_grey_round_corners"
+            android:backgroundTint="#278B2B"
+            android:fontFamily="@font/inter_semibold"
+            android:gravity="center"
+            android:paddingStart="@dimen/_14sdp"
+            android:paddingTop="@dimen/_14sdp"
+            android:paddingEnd="@dimen/_14sdp"
+            android:paddingBottom="@dimen/_14sdp"
+            android:text="NEXT"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_12ssp" />
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</RelativeLayout>

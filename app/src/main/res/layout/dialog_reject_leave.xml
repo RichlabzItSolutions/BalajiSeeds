@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_grey_round_corners"
+    android:backgroundTint="#ffffff"
+    android:paddingStart="@dimen/_10sdp"
+    android:paddingTop="@dimen/_12sdp"
+    android:paddingEnd="@dimen/_10sdp"
+    android:paddingBottom="@dimen/_18sdp">
+
+    <ImageView
+        android:id="@+id/iv_check"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/icon_material_cancel" />
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/baseline_close_24" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_check"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:fontFamily="@font/inter_extrabold"
+        android:text="Reject Leave Request"
+        android:textColor="#000000"
+        android:textSize="@dimen/_16ssp" />
+
+    <EditText
+        android:id="@+id/et_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="@dimen/_23sdp"
+        android:background="@drawable/border_grey_round_corners"
+        android:gravity="start"
+        android:hint="Reason"
+        android:minHeight="@dimen/_65sdp"
+        android:padding="@dimen/_11sdp"
+        android:textColor="#707070"
+        android:textSize="@dimen/_10ssp" />
+
+    <TextView
+        android:id="@+id/tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_reason"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/border_grey_round_corners"
+        android:backgroundTint="#278B2B"
+        android:fontFamily="@font/inter_semibold"
+        android:gravity="center"
+        android:paddingStart="@dimen/_14sdp"
+        android:paddingTop="@dimen/_14sdp"
+        android:paddingEnd="@dimen/_14sdp"
+        android:paddingBottom="@dimen/_14sdp"
+        android:text="Submit"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_12ssp" />
+
+</RelativeLayout>

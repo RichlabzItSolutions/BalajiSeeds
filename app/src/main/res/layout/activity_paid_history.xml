@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#ffffff"
+    tools:context=".employee.PaidHistoryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LinearPaid"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_PaidHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:drawableStart="@drawable/icon_metro_arrow_right"
+            android:drawablePadding="@dimen/_15sdp"
+            android:drawableTint="#000000"
+            android:fontFamily="@font/inter_semibold"
+            android:gravity="center"
+            android:text="Paid History"
+            android:textColor="#000000"
+            android:textSize="@dimen/_14ssp" />
+
+    </LinearLayout>
+
+    <com.balajiseeds.utils.CustomRecyclerView
+        android:id="@+id/rv_paidHistory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/LinearPaid"
+        android:layout_marginStart="@dimen/_11sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_11sdp" />
+
+</RelativeLayout>

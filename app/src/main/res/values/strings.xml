@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Balaji Seeds</string>
+    <string-array name="state">
+        <item>Select State</item>
+    </string-array>
+    <string-array name="city">
+        <item>Select City</item>
+    </string-array>
+    <string-array name="month">
+        <item>Select Month</item>
+    </string-array>
+    <string-array name="year">
+        <item>Select Year</item>
+    </string-array>
+
+    <string-array name="leaveType">
+        <item>Select Leave Type</item>
+        <item>Sick Leave</item>
+        <item>Casual Leave</item>
+        <item>Paid Leave</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

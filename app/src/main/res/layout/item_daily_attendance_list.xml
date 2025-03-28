@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_12sdp"
+    android:background="@drawable/border_grey_round_corners"
+    android:backgroundTint="#ffffff">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/tl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_medium"
+                android:text="Employee Code"
+                android:textColor="#000000"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_medium"
+                android:text="Name"
+                android:textColor="#000000"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_medium"
+                android:text="Mobile Number"
+                android:textColor="#000000"
+                android:textSize="@dimen/_10ssp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_7sdp">
+
+            <TextView
+                android:id="@+id/tv_emp_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_medium"
+                android:text="1RSTYG"
+                android:textColor="#4B4B4B"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/tv_emp_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_medium"
+                android:text="Shaik Akeeb"
+                android:textColor="#4B4B4B"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/tv_emp_mob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_medium"
+                android:text="7780515180"
+                android:textColor="#4B4B4B"
+                android:textSize="@dimen/_10ssp" />
+
+        </TableRow>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/tl2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tl"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_medium"
+                android:text="Login Time"
+                android:textColor="#000000"
+                android:textSize="@dimen/_10ssp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_7sdp">
+
+            <TextView
+                android:id="@+id/tv_login_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_medium"
+                android:text="1RSTYG"
+                android:textColor="#4B4B4B"
+                android:textSize="@dimen/_10ssp" />
+
+        </TableRow>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_track_emp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tl"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:layout_marginEnd="@dimen/_14sdp"
+        android:layout_marginBottom="@dimen/_13sdp"
+        android:background="@drawable/border_grey_round_corners"
+        android:backgroundTint="#DEF4FF"
+        android:drawableStart="@drawable/icon_awesome_map_marker_alt"
+        android:drawablePadding="@dimen/_3sdp"
+        android:fontFamily="@font/inter_medium"
+        android:padding="@dimen/_7sdp"
+        android:text="Track Employee"
+        android:textColor="#408CB2"
+        android:textSize="@dimen/_8ssp" />
+
+</RelativeLayout>

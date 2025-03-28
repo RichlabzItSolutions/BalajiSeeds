@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_87sdp"
+    android:layout_height="@dimen/_87sdp">
+
+    <com.balajiseeds.utils.CustomImageViewDashed
+        android:id="@+id/img"
+        android:layout_width="@dimen/_87sdp"
+        android:layout_height="@dimen/_87sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp" />
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/border_grey_round_corners"
+        android:backgroundTint="#ff0000"
+        android:padding="@dimen/_3sdp"
+        android:src="@drawable/baseline_delete_24"
+        android:visibility="gone"
+        app:tint="#ffffff" />
+</RelativeLayout>

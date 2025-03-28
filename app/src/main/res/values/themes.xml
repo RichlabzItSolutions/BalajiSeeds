@@ -1,0 +1,45 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.BalajiSeeds" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">#278B2B</item>
+        <item name="android:statusBarColor">#278B2B</item>
+        <item name="colorAccent">#278B2B</item>
+
+    </style>
+
+    <style name="Theme.BalajiSeeds" parent="Base.Theme.BalajiSeeds" />
+    <style name="toolbar" parent="Widget.AppCompat.ActionBar">
+        <item name="android:fontFamily">@font/inter_semibold</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="navigationIconTint">#ffffff</item>
+    </style>
+
+    <style name="SpinnerTextStyle">
+        <item name="android:fontFamily">@font/inter_regular</item> <!-- Set your desired font family -->
+        <item name="android:textSize">14sp</item> <!-- Set your desired font size -->
+    </style>
+    <style name="BalajiSeeds.Actionbar" parent="Theme.MaterialComponents.Light">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#278B2B</item>
+        <item name="colorPrimaryVariant">#278B2B</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#278B2B</item>
+        <item name="colorSecondaryVariant">#FFFFFF</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">#278B2B</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="tab_text_style" >
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>

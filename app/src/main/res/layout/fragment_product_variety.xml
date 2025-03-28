@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F8FA"
+    tools:context=".admin.fragments.ProductVarietyFragment">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:drawableStart="@drawable/icon_metro_arrow_right"
+        android:drawablePadding="@dimen/_10sdp"
+        android:drawableTint="#000000"
+        android:fontFamily="@font/inter_semibold"
+        android:gravity="center"
+        android:text="Product Variety"
+        android:textColor="#000000"
+        android:textSize="@dimen/_14ssp" />
+    <ImageView
+        android:id="@+id/iv_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textView"
+        android:layout_alignBottom="@id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:fontFamily="@font/inter_semibold"
+        android:gravity="center_vertical"
+        android:src="@drawable/baseline_shopping_cart_24"
+        android:textColor="#000000"
+        android:visibility="gone"
+        android:textSize="@dimen/_10ssp" />
+
+    <TextView
+        android:id="@+id/tv_add_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:layout_marginEnd="@dimen/_13sdp"
+        android:drawableStart="@drawable/icon_ionic_ios_add_circle"
+        android:drawablePadding="@dimen/_3sdp"
+        android:fontFamily="@font/inter_semibold"
+        android:gravity="center"
+        android:text="Add Product Variety"
+        android:textColor="#278B2B"
+        android:textSize="@dimen/_11ssp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textView"
+        android:layout_marginStart="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_19sdp"
+        android:layout_marginEnd="@dimen/_13sdp">
+
+
+        <com.balajiseeds.utils.CustomRecyclerView
+            android:id="@+id/rv_product_Variety"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/_13sdp" />
+    </RelativeLayout>
+
+</RelativeLayout>

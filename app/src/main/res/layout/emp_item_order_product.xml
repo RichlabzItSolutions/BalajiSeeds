@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_head"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/txt_products"
+    android:gravity="center"
+    android:layout_marginTop="@dimen/_5sdp">
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/inter_medium"
+        android:text="Product Name"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textSize="@dimen/_11ssp" />
+    <TextView
+        android:id="@+id/tv_qty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/inter_medium"
+        android:text="Quantity"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="@dimen/_11ssp" />
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_medium"
+        android:text="Delete"
+        android:textColor="#F44336"
+        android:padding="@dimen/_3sdp"
+        android:textSize="@dimen/_11ssp" />
+</LinearLayout>
