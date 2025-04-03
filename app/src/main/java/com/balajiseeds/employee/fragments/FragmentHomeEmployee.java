@@ -76,6 +76,7 @@ public class FragmentHomeEmployee extends Fragment {
                 startActivity(new Intent(getContext(), ExpensesActivity.class));
             }
         });
+
         binding.cvOrders.setOnClickListener(v->{
             ((EmployeeMainActivity)getContext()).loadFrag(new FragmentMyOrders());
         });

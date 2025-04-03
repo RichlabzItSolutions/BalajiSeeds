@@ -75,7 +75,9 @@ public class FragmentProductList extends Fragment  {
                 @Override
                 public void getProductVariety(List<GetProductVarietyDetails> ProductVarietyList) {
 
-                    for (GetProductVarietyDetails productVariety : ProductVarietyList) {
+                    List<GetProductVarietyDetails> list = ProductVarietyList;
+
+                   /* for (GetProductVarietyDetails productVariety : ProductVarietyList) {
                        // binding.tabLayout.addTab(binding.tabLayout.newTab().setText(productVariety.getVarietyName()).setText(productVariety.getVarietyId()));
 
                         TabLayout.Tab tab = binding.tabLayout.newTab().setText(productVariety.getVarietyName());
@@ -85,6 +87,24 @@ public class FragmentProductList extends Fragment  {
 
                         // Add the tab to the TabLayout
                         binding.tabLayout.addTab(tab);
+                    }*/
+
+
+                    for (int i = 0; i < list.size(); i++) {
+                        GetProductVarietyDetails productVariety = list.get(i);
+
+                        TabLayout.Tab tab = binding.tabLayout.newTab()
+                                .setText(productVariety.getVarietyName())
+                                .setTag(productVariety.getVarietyId());
+
+                        binding.tabLayout.addTab(tab);
+
+                        // Select the first tab by default
+                        if (i == 0) {
+                            tab.select(); // This will automatically trigger onTabSelected
+                            varietyId = productVariety.getVarietyId();
+                            fetchProducts(); // manually call this to make sure data is loaded
+                        }
                     }
 
                     binding.tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
@@ -93,6 +113,7 @@ public class FragmentProductList extends Fragment  {
                             if (tab.getTag() != null) {
                                  varietyId = tab.getTag().toString();
                                 Log.d("TabSelected", "Variety ID: " + varietyId);
+
                                 fetchProducts();
                             }
                         }
