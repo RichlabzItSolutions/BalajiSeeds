@@ -56,6 +56,19 @@
         android:layout_marginLeft="@dimen/_5sdp"
         />
 
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50"
+        android:textColor="#E31D2A"
+        android:textSize="12sp"
+        android:paddingEnd="5dp"
+        android:gravity="center"
+        android:layout_below="@id/product_size"
+        android:layout_marginLeft="@dimen/_5sdp"
+        />
+
     <LinearLayout
         android:id="@+id/ll_count"
         android:layout_width="wrap_content"

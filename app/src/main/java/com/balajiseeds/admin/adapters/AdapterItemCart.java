@@ -74,6 +74,7 @@ public class AdapterItemCart extends RecyclerView.Adapter<AdapterItemCart.ViewHo
     public void onBindViewHolder(@NonNull AdapterItemCart.ViewHolder holder, int position) {
         GetCartDetails cart=cartList.get(position);
         holder.tv_name.setText(cart.getProductName());
+        holder.product_price.setText("Amount : "+cart.getTotal_amount());
         holder.tv_qty.setText(""+cart.getQty());
         holder.qty=Integer.valueOf(cart.getQty());
         holder.tv_plus.setOnClickListener(new View.OnClickListener() {
@@ -148,7 +149,7 @@ public class AdapterItemCart extends RecyclerView.Adapter<AdapterItemCart.ViewHo
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        TextView  tv_add, tv_qty, tv_plus, tv_minus,tv_name, product_varity, product_size;
+        TextView  tv_add, tv_qty, tv_plus, tv_minus,tv_name, product_varity, product_price, product_size;
         ImageView prodImg;
         int qty = 0;
         LinearLayout ll_count;
@@ -158,6 +159,7 @@ public class AdapterItemCart extends RecyclerView.Adapter<AdapterItemCart.ViewHo
             super(itemView);
 
             product_varity = itemView.findViewById(R.id.product_varity);
+            product_price = itemView.findViewById(R.id.product_price);
             product_size = itemView.findViewById(R.id.product_size);
             prodImg = itemView.findViewById(R.id.imageView4);
             tv_qty = itemView.findViewById(R.id.tvQuantity);

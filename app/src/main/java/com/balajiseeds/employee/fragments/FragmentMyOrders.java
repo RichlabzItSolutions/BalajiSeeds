@@ -33,12 +33,21 @@ public class FragmentMyOrders extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         binding=EmpFragmentMyOrdersBinding.inflate(getLayoutInflater());
         binding.rvOrders.setLayoutManager(new LinearLayoutManager(getContext()));
-        BottomNavigationView botnav=((EmployeeMainActivity)getContext()).findViewById(R.id.botnav_employee_main);
-        botnav.getMenu().getItem(1).setChecked(true);
+
+        if (getActivity() != null) {
+            // Use getActivity() safely without casting
+        }
+        else {
+            BottomNavigationView botnav=((EmployeeMainActivity)getContext()).findViewById(R.id.botnav_employee_main);
+
+            botnav.getMenu().getItem(1).setChecked(true);
+        }
+
         webServices=new WebServices(getContext());
         binding.tvOrders.setOnClickListener(v->{
             requireActivity().getOnBackPressedDispatcher().onBackPressed();
         });
+
         return binding.getRoot();
     }
 
@@ -63,10 +72,5 @@ public class FragmentMyOrders extends Fragment {
                 binding.rvOrders.setAdapter(adapterOrders);
             }
         });
-
-
-
-
-
     }
 }
